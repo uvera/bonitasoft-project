@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="7.13.0">
+    <businessObjects>
+        <businessObject qualifiedName="com.company.model.Firma">
+            <fields>
+                <relationField type="AGGREGATION" reference="com.company.model.Korisnik" fetchType="LAZY" name="agent" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints>
+                <uniqueConstraint name="uniqueConstraint">
+                    <fieldNames>
+                        <fieldName>agent</fieldName>
+                    </fieldNames>
+                </uniqueConstraint>
+            </uniqueConstraints>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.KategorijaPosla">
+            <fields>
+                <field type="STRING" length="255" name="naziv" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.Korisnik">
+            <fields>
+                <field type="STRING" length="255" name="ime" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="email" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="username" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="password" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="adresa" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="mesto" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="postanskiBroj" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints>
+                <uniqueConstraint name="uniqueConstraint">
+                    <fieldNames>
+                        <fieldName>email</fieldName>
+                        <fieldName>username</fieldName>
+                    </fieldNames>
+                </uniqueConstraint>
+            </uniqueConstraints>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.PonudaFirme">
+            <fields>
+                <field type="DOUBLE" length="255" name="cena" nullable="false" collection="false"/>
+                <field type="LOCALDATETIME" length="255" name="rokPotrebanZaPosao" nullable="false" collection="false"/>
+                <field type="BOOLEAN" length="255" name="prihvacena" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.RecenzijaZaFirmu">
+            <fields>
+                <field type="INTEGER" length="255" name="ocena" nullable="false" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.Firma" fetchType="LAZY" name="firma" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.RecenzijaZaKlijenta">
+            <fields>
+                <field type="INTEGER" length="255" name="ocena" nullable="false" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.Korisnik" fetchType="LAZY" name="klijent" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.ZahtevZaNabavku">
+            <fields>
+                <relationField type="AGGREGATION" reference="com.company.model.KategorijaPosla" fetchType="LAZY" name="kategorijaPosla" nullable="false" collection="false"/>
+                <field type="STRING" length="255" name="opisPosla" nullable="false" collection="false"/>
+                <field type="DOUBLE" length="255" name="cena" nullable="false" collection="false"/>
+                <field type="LOCALDATETIME" length="255" name="rokZaPonudu" nullable="false" collection="false"/>
+                <field type="INTEGER" length="255" name="maksBrojPonuda" nullable="false" collection="false"/>
+                <field type="LOCALDATETIME" length="255" name="rokZaKrajPosla" nullable="false" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>
