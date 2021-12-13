@@ -58,6 +58,7 @@
             <fields>
                 <field type="INTEGER" length="255" name="ocena" nullable="false" collection="false"/>
                 <relationField type="AGGREGATION" reference="com.company.model.Firma" fetchType="LAZY" name="firma" nullable="false" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.Korisnik" fetchType="LAZY" name="korisnikKojiOcenjuje" nullable="false" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -67,6 +68,7 @@
             <fields>
                 <field type="INTEGER" length="255" name="ocena" nullable="false" collection="false"/>
                 <relationField type="AGGREGATION" reference="com.company.model.Korisnik" fetchType="LAZY" name="klijent" nullable="false" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.Firma" fetchType="LAZY" name="firmaKojaOcenjuje" nullable="false" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -80,6 +82,7 @@
                 <field type="LOCALDATETIME" length="255" name="rokZaPonudu" nullable="false" collection="false"/>
                 <field type="INTEGER" length="255" name="maksBrojPonuda" nullable="false" collection="false"/>
                 <field type="LOCALDATETIME" length="255" name="rokZaKrajPosla" nullable="false" collection="false"/>
+                <relationField type="COMPOSITION" reference="com.company.model.PonudaFirme" fetchType="LAZY" name="ponudeFirme" nullable="true" collection="true"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
