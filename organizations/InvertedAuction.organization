@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="InvertedAuction">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="smith">
+      <firstName>Smith</firstName>
+      <lastName>Root</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="mike">
+      <firstName>Mike</firstName>
+      <lastName>Doe</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="john">
+      <firstName>John</firstName>
+      <lastName>Doe</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="sara">
+      <firstName>Sara</firstName>
+      <lastName>Jane</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="taylor">
+      <firstName>Taylor</firstName>
+      <lastName>Jane</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="miley">
+      <firstName>Miley</firstName>
+      <lastName>Jay</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="selena">
+      <firstName>Selena</firstName>
+      <lastName>Jay</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="starc">
+      <firstName>Starc</firstName>
+      <lastName>Bob</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="zampa">
+      <firstName>Zampa</firstName>
+      <lastName>Bob</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Client">
+      <displayName>Client</displayName>
+    </role>
+    <role name="Web Development">
+      <displayName>Web Development</displayName>
+    </role>
+    <role name="App Development">
+      <displayName>App Development</displayName>
+    </role>
+    <role name="UI/UX Designer">
+      <displayName>UI/UX Designer</displayName>
+    </role>
+    <role name="Digital Marketing">
+      <displayName>Digital Marketing</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="Client">
+      <displayName>Client</displayName>
+    </group>
+    <group name="Agent">
+      <displayName>Agent</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>smith</userName>
+      <roleName>Client</roleName>
+      <groupName>Client</groupName>
+    </membership>
+    <membership>
+      <userName>mike</userName>
+      <roleName>Web Development</roleName>
+      <groupName>Agent</groupName>
+    </membership>
+    <membership>
+      <userName>john</userName>
+      <roleName>Web Development</roleName>
+      <groupName>Agent</groupName>
+    </membership>
+    <membership>
+      <userName>sara</userName>
+      <roleName>App Development</roleName>
+      <groupName>Agent</groupName>
+    </membership>
+    <membership>
+      <userName>taylor</userName>
+      <roleName>App Development</roleName>
+      <groupName>Agent</groupName>
+    </membership>
+    <membership>
+      <userName>miley</userName>
+      <roleName>UI/UX Designer</roleName>
+      <groupName>Agent</groupName>
+    </membership>
+    <membership>
+      <userName>selena</userName>
+      <roleName>UI/UX Designer</roleName>
+      <groupName>Agent</groupName>
+    </membership>
+    <membership>
+      <userName>starc</userName>
+      <roleName>Digital Marketing</roleName>
+      <groupName>Agent</groupName>
+    </membership>
+    <membership>
+      <userName>zampa</userName>
+      <roleName>Digital Marketing</roleName>
+      <groupName>Agent</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>
