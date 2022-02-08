@@ -13,12 +13,44 @@
             <queries/>
             <indexes/>
         </businessObject>
+        <businessObject qualifiedName="com.company.model.Company">
+            <fields>
+                <field type="STRING" length="255" name="name" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="category" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="com.company.model.Confirmation">
             <fields>
                 <field type="STRING" length="255" name="infoAsked" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="infoReplied" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="status" nullable="true" collection="false"/>
                 <field type="STRING" length="255" name="decision" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.IAUser">
+            <fields>
+                <field type="STRING" length="255" name="name" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="email" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="username" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="password" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="address" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="place" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="postalCode" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="userType" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.ListCompanies">
+            <fields>
+                <relationField type="AGGREGATION" reference="com.company.model.Company" fetchType="LAZY" name="companies" nullable="true" collection="true"/>
             </fields>
             <uniqueConstraints/>
             <queries/>

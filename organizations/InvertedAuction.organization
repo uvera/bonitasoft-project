@@ -99,6 +99,9 @@
     <group name="Agent">
       <displayName>Agent</displayName>
     </group>
+    <group name="Guest">
+      <displayName>Guest</displayName>
+    </group>
   </groups>
   <memberships>
     <membership>
