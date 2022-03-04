@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "newForm5",
   "name" : "newForm5",
-  "lastUpdate" : 1646433181606,
+  "lastUpdate" : 1646433542439,
   "rows" : [
     [
       {
@@ -329,8 +329,8 @@
                                 "value" : false
                               },
                               "displayedKey" : {
-                                "type" : "constant",
-                                "value" : "name"
+                                "type" : "expression",
+                                "value" : ""
                               },
                               "returnedKey" : {
                                 "type" : "constant"
