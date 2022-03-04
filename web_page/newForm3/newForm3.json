@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "newForm3",
   "name" : "newForm3",
-  "lastUpdate" : 1646418162094,
+  "lastUpdate" : 1646419012107,
   "rows" : [
     [
       {
@@ -113,7 +113,16 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
         "reference" : "d1138952-728a-4f2b-9455-f0cb7eb719f1",
         "hasValidationError" : false,
         "id" : "pbFormContainer",

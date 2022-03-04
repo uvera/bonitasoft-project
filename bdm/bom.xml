@@ -3,7 +3,7 @@
     <businessObjects>
         <businessObject qualifiedName="com.company.model.Bid">
             <fields>
-                <field type="STRING" length="255" name="bidder" nullable="true" collection="false"/>
+                <relationField type="AGGREGATION" reference="com.company.model.Company" fetchType="LAZY" name="bidder" nullable="true" collection="false"/>
                 <field type="INTEGER" length="255" name="bidPrice" nullable="true" collection="false"/>
                 <field type="LOCALDATE" length="255" name="bidDeadline" nullable="true" collection="false"/>
                 <field type="BOOLEAN" length="255" name="isSelected" nullable="true" collection="false"/>
@@ -20,7 +20,15 @@
                 <relationField type="AGGREGATION" reference="com.company.model.IAUser" fetchType="LAZY" name="agent" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
-            <queries/>
+            <queries>
+                <query name="query" content="SELECT c &#10;FROM Company c &#10;ORDER BY c.persistenceId ASC" returnType="java.util.List">
+                    <description>findEverything</description>
+                    <queryParameters/>
+                </query>
+                <query name="findAllC" content="SELECT c &#10;FROM Company c &#10;ORDER BY c.persistenceId ASC" returnType="java.util.List">
+                    <queryParameters/>
+                </query>
+            </queries>
             <indexes/>
         </businessObject>
         <businessObject qualifiedName="com.company.model.Confirmation">

@@ -2,7 +2,7 @@
   "modelVersion" : "2.2",
   "id" : "submitRequestForm",
   "name" : "submitRequestForm",
-  "lastUpdate" : 1645817258784,
+  "lastUpdate" : 1646419036171,
   "rows" : [
     [
       {
@@ -323,8 +323,9 @@
                         "availableValues" : {
                           "type" : "constant",
                           "value" : [
+                            "App Development",
                             "Web Development",
-                            "Graphic Designing",
+                            "UI/UX Designer",
                             "Digital Marketing"
                           ]
                         },
@@ -635,6 +636,25 @@
                         "required" : {
                           "type" : "constant",
                           "value" : false
+                        },
+                        "minLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "maxLength" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "min" : {
+                          "type" : "constant"
+                        },
+                        "max" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "step" : {
+                          "type" : "constant",
+                          "value" : 1
                         }
                       },
                       "reference" : "c3cbbcbb-1548-4200-9694-c6c5e63f1796",
